@@ -1,47 +1,371 @@
-# Privacy Policy – Quran Glow
 
-**Effective Date:** November 26, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071f19">
+  <meta name="description" content="Quran Glow Privacy Policy. Learn how we protect your privacy and handle your information.">
+  <title>Privacy Policy | Quran Glow</title>
 
-## 1. Introduction
+  <style>
+    :root {
+      --bg: #071f19;
+      --surface: #0d2b23;
+      --surface-light: #12382d;
+      --green: #b5d8b9;
+      --gold: #d8b978;
+      --text: #f3f4ed;
+      --muted: #a9b9ad;
+      --border: rgba(216,185,120,.17);
+    }
 
-Welcome to Quran Glow. Your privacy is important to us. This Privacy Policy explains how Quran Glow handles information when you use our mobile application.
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-## 2. Information Collection
+    html { scroll-behavior: smooth; }
 
-Quran Glow does not directly collect, request, or store personal information such as your name, email address, phone number, or location.
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
 
-The application does not require users to create an account or log in.
+    a { color: var(--gold); text-decoration: none; }
 
-## 3. Device Permissions
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 75px 20px 65px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 0%, #1c5540 0%, transparent 65%),
+        linear-gradient(180deg, #0b3025, var(--bg));
+      border-bottom: 1px solid var(--border);
+    }
 
-Quran Glow does not request access to sensitive device permissions such as location, contacts, camera, or storage.
+    .hero::before {
+      content: "۞";
+      position: absolute;
+      font-size: 280px;
+      color: rgba(216,185,120,.035);
+      top: -105px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
 
-## 4. Third-Party Services
+    .logo {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(216,185,120,.5);
+      border-radius: 24px;
+      background: rgba(216,185,120,.09);
+      color: var(--gold);
+      font-size: 37px;
+      box-shadow: 0 0 40px rgba(216,185,120,.09);
+    }
 
-Quran Glow does not currently integrate third-party advertising, analytics, or user-tracking services.
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
 
-If third-party services are introduced in future versions, this Privacy Policy will be updated accordingly.
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(36px, 6vw, 54px);
+      font-weight: 500;
+      letter-spacing: -1.5px;
+      margin-bottom: 12px;
+    }
 
-## 5. Data Security
+    .hero p {
+      color: var(--muted);
+      font-size: 15px;
+    }
 
-Since Quran Glow does not directly collect or maintain personal information, it does not operate a personal user database.
+    .updated {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 7px 15px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      color: var(--green);
+      font-size: 12px;
+    }
 
-We nevertheless aim to provide a safe and privacy-conscious application experience.
+    .container {
+      max-width: 850px;
+      padding: 55px 22px 80px;
+      margin: auto;
+    }
 
-## 6. Children's Privacy
+    .intro {
+      padding: 27px 30px;
+      background: linear-gradient(135deg, #12382d, #0d2b23);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 45px;
+    }
 
-Quran Glow does not knowingly collect personal information from children or any other users.
+    .intro h2 {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
 
-## 7. Changes to This Privacy Policy
+    .intro p { color: #d3ded5; }
 
-We may update this Privacy Policy from time to time to reflect changes in the application or applicable requirements. Any updates will be published on this page.
+    .section {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 18px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-## 8. Contact Us
+    .section-icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(181,216,185,.08);
+      border: 1px solid rgba(181,216,185,.12);
+      border-radius: 13px;
+      font-size: 20px;
+    }
 
-If you have any questions or concerns regarding this Privacy Policy, you can contact us at:
+    .section h2 {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-weight: 500;
+      color: var(--green);
+      margin-bottom: 9px;
+    }
 
-**Email:** [INSERT YOUR CONTACT EMAIL]
+    .section p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
 
----
+    .section ul {
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-By using Quran Glow, you acknowledge this Privacy Policy.
+    .section li { margin-bottom: 5px; }
+
+    .contact {
+      margin-top: 40px;
+      padding: 32px;
+      background: linear-gradient(135deg, #153b2e, #0d2b23);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      text-align: center;
+    }
+
+    .contact .symbol {
+      color: var(--gold);
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .contact h2 {
+      font-family: Georgia, serif;
+      font-weight: 500;
+      font-size: 25px;
+      margin-bottom: 9px;
+    }
+
+    .contact p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 9px 19px;
+      border: 1px solid rgba(216,185,120,.4);
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 27px 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #84988b;
+      font-size: 12px;
+    }
+
+    footer span { color: var(--gold); }
+
+    @media(max-width: 600px) {
+      .hero { padding: 55px 18px 48px; }
+      .container { padding: 35px 18px 55px; }
+      .intro { padding: 22px; }
+      .section { grid-template-columns: 40px 1fr; gap: 13px; }
+      .section-icon { width: 38px; height: 38px; font-size: 17px; }
+      .section h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="logo">۞</div>
+    <div class="eyebrow">Quran Glow</div>
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters. Your journey deserves peace of mind.</p>
+    <div class="updated">Last updated: November 26, 2026</div>
+  </header>
+
+  <main class="container">
+
+    <div class="intro">
+      <h2>Our commitment to your privacy</h2>
+      <p>
+        At Quran Glow, we believe that your spiritual journey should remain
+        personal. We respect your privacy and aim to keep your experience
+        simple, safe, and transparent. This policy explains how information
+        is handled when you use our application.
+      </p>
+    </div>
+
+    <section class="section">
+      <div class="section-icon">📋</div>
+      <div>
+        <h2>1. Information We Collect</h2>
+        <p>
+          Quran Glow does not require you to create an account or provide
+          personal information such as your name, email address, or phone
+          number to use the application.
+        </p>
+        <p>
+          We do not directly collect or maintain a database of users'
+          personal information.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">📱</div>
+      <div>
+        <h2>2. Device Permissions</h2>
+        <p>
+          Quran Glow does not request sensitive device permissions such as
+          access to your location, contacts, camera, or microphone.
+        </p>
+        <p>
+          Any permissions required for basic application functionality
+          will be limited to what is necessary.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">🔗</div>
+      <div>
+        <h2>3. Third-Party Services</h2>
+        <p>
+          Quran Glow currently does not intentionally integrate third-party
+          advertising, analytics, or user-tracking services.
+        </p>
+        <p>
+          If third-party services are introduced in future versions,
+          this policy will be updated to explain what information they
+          may process and how it is used.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">🛡️</div>
+      <div>
+        <h2>4. Data Security</h2>
+        <p>
+          We aim to provide a privacy-conscious application experience.
+          Since Quran Glow does not maintain a personal user database,
+          we do not store personal user profiles on our own servers.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">👨‍👩‍👧</div>
+      <div>
+        <h2>5. Children's Privacy</h2>
+        <p>
+          Quran Glow does not knowingly collect personal information
+          from children. The application does not require users to
+          submit personal details to access its features.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">🔄</div>
+      <div>
+        <h2>6. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes in the application, its features, or applicable
+          requirements.
+        </p>
+        <p>
+          Any updates will be published on this page with a revised
+          update date.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-icon">⚖️</div>
+      <div>
+        <h2>7. Your Privacy Rights</h2>
+        <p>
+          If you have questions about information handling or wish to
+          raise a privacy concern, you can contact us using the details
+          below.
+        </p>
+      </div>
+    </section>
+
+    <div class="contact">
+      <div class="symbol">✉</div>
+      <h2>Questions? We're here.</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy,
+        please contact us.
+      </p>
+      <a href="mailto:YOUR_EMAIL@example.com">Contact Us</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Made with <span>♥</span> for a more mindful digital journey.</p>
+    <p style="margin-top:7px">© 2026 Quran Glow. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
